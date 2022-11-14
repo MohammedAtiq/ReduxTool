@@ -22,6 +22,8 @@ const Products = () => {
         //     setProducts(data)
         // }
         // fetchProducts()
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
     const handleClick = (product) => {
