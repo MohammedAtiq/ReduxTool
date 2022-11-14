@@ -15,12 +15,12 @@ const Cart = () => {
         { items.length !== 0 ?
             items.map((product) => (
               <div className="col-sm-3">
-                <div class="card" >
-                  <img src={product.image} class="card-img-top" alt="..." />
-                  <div class="card-body">
-                    <h5 class="card-title">{product.title}</h5>
-                    <p class="card-text">$ : {product.price}</p>
-                    <button class="btn btn-danger" onClick={() => removeCart(product.id)}>Remove</button>
+                <div className="card  mx-auto" >
+                  <img src={product.image} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title">{product.title}</h5>
+                    <p className="card-text">$ : {product.price}</p>
+                    <button className="btn btn-danger" onClick={() => removeCart(product.id)}>Remove</button>
                   </div>
                 </div>
               </div>
